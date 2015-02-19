@@ -1,5 +1,5 @@
 # interactor
-Interactor provides a common interface for performing complex user interactions. It's inspired by ![https://github.com/collectiveidea/interactor](collectiveidea's interactor gem).
+Interactor provides a common interface for performing complex user interactions. It's inspired by [collectiveidea's interactor gem](https://github.com/collectiveidea/interactor).
 
 ### An Example Interactor
 
