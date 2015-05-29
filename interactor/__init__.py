@@ -1,13 +1,24 @@
 #!/usr/bin/env python
 
-__version__ = '0.1.1'
+__version__ = '0.1.2'
 
 # standard library imports
 
 # third party related imports
 
 # local library imports
-from context import Context
+
+
+class Context(object):
+
+    @classmethod
+    def build(cls, **context):
+
+        return cls(**context)
+
+    def __init__(self, **context):
+
+        map(lambda key: setattr(self, key, context[key]), context)
 
 
 class Interactor(object):
