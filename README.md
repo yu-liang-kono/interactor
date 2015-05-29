@@ -17,3 +17,13 @@ class AuthenticateUser(Interacotr):
         else:
             raise RuntimeError('Fail to authenticate user')
 ```
+
+### Usage
+
+```python
+from somewhere import AuthenticateUser
+
+ctx = AuthenticateUser.call(email='test@gmail.com', password='secret')
+print ctx.user
+print ctx.token
+```
