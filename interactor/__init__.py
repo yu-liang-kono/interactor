@@ -18,7 +18,7 @@ class Context(object):
 
     def __init__(self, **context):
 
-        map(lambda key: setattr(self, key, context[key]), context)
+        _ = [setattr(self, key, context[key]) for key in context]
 
 
 class Interactor(object):
